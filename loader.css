@@ -1,0 +1,37 @@
+.loader {
+  z-index: 99;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+}
+
+.loader > span {
+  display: inline-block;
+  background: #dbdbdb;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0px;
+  position: fixed;
+  top: 32.5px;
+  left: -10%;
+  transition: 2.8s all cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  -o-transition: 2.8s all cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  -ms-transition: 2.8s all cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  -moz-transition: 2.8s all cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  -webkit-transition: 2.8s all cubic-bezier(0.03, 0.615, 0.995, 0.415);
+  z-index: 101;
+  background: #fff;
+}
+
+.loader > span.jmp {
+  transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+}

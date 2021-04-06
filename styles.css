@@ -1,0 +1,93 @@
+@font-face {
+  font-family: varela-round;
+  src: url(assets/varela-round.ttf);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "varela-round";
+}
+.fab-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 50px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 7px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.fab-btn:hover {
+  box-shadow: 0px 0px 10px red;
+}
+.vanillatoasts-toast {
+  background-color: #000;
+}
+.vanillatoasts-toast {
+  font-family: "varela-round";
+}
+.title-bar {
+  height: 30px;
+  width: 100%;
+}
+.mid-bar {
+  -webkit-app-region: drag;
+}
+.info-bar {
+  -webkit-app-region: drag;
+  width: 81.4%;
+}
+.info-bar,
+.btn-cut,
+.btn-size,
+.btn-min {
+  cursor: default;
+  user-select: none;
+}
+.btn-cut,
+.btn-size,
+.btn-min {
+  text-align: center;
+  width: 40px;
+  height: 100%;
+  padding-top: 5px;
+  float: right;
+}
+.btn-cut:hover {
+  background-color: #d71424;
+}
+.btn-size:hover,
+.btn-min:hover {
+  background-color: #555;
+}
+
+.progress-bar-grad {
+  background-image: linear-gradient(
+    -225deg,
+    #ac32e4 0%,
+    #7918f2 48%,
+    #4801ff 100%
+  );
+  /* background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%); */
+  /* background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%); */
+  background-size: 400% 400%;
+  animation: progress-bar-animation 6s ease infinite;
+}
+@keyframes progress-bar-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

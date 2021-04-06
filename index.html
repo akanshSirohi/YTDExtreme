@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YTDXtreme</title>
+    <script>
+      if (typeof module === "object") {
+        window.module = module;
+        module = undefined;
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="libs/toast/vanillatoasts.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./loader.css" />
+    <script
+      src="https://kit.fontawesome.com/e8daac6d65.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="libs/bootstrap/js/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/popper.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/toast/vanillatoasts.js"></script>
+    <script src="./script.js"></script>
+    <script src="./loader.js"></script>
+    <style>
+      .btn-cut:hover {
+        background-color: red;
+      }
+    </style>
+    <script>
+      if (window.module) module = window.module;
+    </script>
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="row" style="height: 100%">
+        <div class="col-sm-5 info-bar">
+          <img
+            src="./assets/logo.svg"
+            alt=""
+            srcset=""
+            style="height: 30px; padding-left: 5px"
+          />
+        </div>
+        <div class="col-sm-5 mid-bar"></div>
+        <div class="col end-bar">
+          <div class="btn-cut" id="btn-cut">
+            <img src="./assets/close.svg" alt="" srcset="" />
+          </div>
+          <div class="btn-size" id="btn-size">
+            <img src="./assets/square.svg" style="height: 18px" id="w_btn" />
+          </div>
+          <div class="btn-min" id="btn-min">
+            <img src="./assets/minimize.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="loader" style="height: 10px; display: none">
+      <div class="loader">
+        <span class="l-1"></span>
+        <span class="l-2"></span>
+        <span class="l-3"></span>
+        <span class="l-4"></span>
+        <span class="l-5"></span>
+        <span class="l-6"></span>
+      </div>
+    </div>
+    <webview
+      id="web"
+      src="https://www.youtube.com/"
+      style="height: 100%"
+      nodeintegration
+    ></webview>
+    <div class="fab-btn" id="download_btn">
+      <i class="fas fa-download" style="font-size:30px;margin-top:4px;"></i>
+    </div>
+    <div class="modal fade" id="dModal" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Select video format to download</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <select class="custom-select form-control" id="d_videos">
+              <option selected="" disabled="true">
+                Available Formats...
+              </option>
+              <optgroup
+                label="Audio Download Links"
+                id="audio_links"
+              ></optgroup>
+              <optgroup
+                label="Video Download Links"
+                id="video_links"
+              ></optgroup>
+            </select>
+            <div class="input-group-append">
+          </div>
+          <div class="modal-footer" style="padding-right: 0;">
+            <button id="downloadVideo" class="btn btn-primary">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

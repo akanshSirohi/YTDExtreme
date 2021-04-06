@@ -1,0 +1,34 @@
+{
+  "name": "ytdextremepro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "debug": "nodemon app.js",
+    "package-win": "electron-packager . YTDExtreme --overwrite --asar --platform=win32 --arch=x64 --icon=icons/win_ico.ico --prune=true --out=release-builds --version-string.CompanyName=\"Akansh Sirohi\" --version-string.FileDescription=\"YouTube Video Downloading Software\" --version-string.ProductName=\"YTDExtreme\" --win32metadata.requested-execution-level=\"requireAdministrator\"",
+    "package-linux": "electron-packager . YTDExtreme --overwrite --asar=true --platform=linux --arch=x64 --icon=icons/linux_ico.png --prune=true --out=release-builds",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icons/mac_ico.icns --prune=true --out=release-builds"
+  },
+  "build": {
+    "win": {
+      "requested-execution-level": "requireAdministrator"
+    }
+  },
+  "author": "Akansh Sirohi",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.20.3",
+    "cross-fetch": "^3.0.6",
+    "electron-download-manager": "^2.1.2",
+    "electron-localshortcut": "^3.2.1",
+    "ffmpeg-static-electron": "^2.0.1",
+    "pretty-bytes": "^5.6.0",
+    "sanitize-filename": "^1.6.3",
+    "ytdl-core": "^4.5.0"
+  }
+}
