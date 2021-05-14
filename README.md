@@ -6,19 +6,11 @@ Powered By: https://github.com/fent/node-ytdl-core
 ## Requirements
 
 - NodeJS
-- ElectronJS (Globally Installed)
+- ElectronJS
 
 ## Instructions to run
 
 ### Step 1
-
-Install Electron Globally
-
-```bash
-$ npm install electron -g
-```
-
-### Step 2
 
 Install Dependencies
 
@@ -26,7 +18,7 @@ Install Dependencies
 $ npm install
 ```
 
-### Step 3
+### Step 2
 
 Run Project
 
