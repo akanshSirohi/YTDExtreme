@@ -45,3 +45,13 @@ $ npm run package-linux
 ```bash
 $ npm run package-mac
 ```
+
+## Screenshots
+<img src="screenshots/ss1.png?raw=true" alt="Screenshot 1">
+<img src="screenshots/ss2.png?raw=true" alt="Screenshot 2">
+<img src="screenshots/ss3.png?raw=true" alt="Screenshot 3">
+<img src="screenshots/ss4.png?raw=true" alt="Screenshot 4">
+<img src="screenshots/ss5.png?raw=true" alt="Screenshot 5">
+<img src="screenshots/ss6.png?raw=true" alt="Screenshot 6">
+<img src="screenshots/ss7.png?raw=true" alt="Screenshot 7">
+<img src="screenshots/ss8.png?raw=true" alt="Screenshot 8">
