@@ -1,3 +1,5 @@
+<img src="screenshots/logo.png?raw=true" width="500" alt="Logo">
+
 # YTDExtreme
 
 Cross platform YouTube video downloading software built in ElectronJS <br>
